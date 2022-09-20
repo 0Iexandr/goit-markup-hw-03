@@ -31,15 +31,19 @@ h1, h2, h3, ul, p {
 }
 
 .header-container {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-section {
+    max-width: 100%;
     width: 1200px;
     padding: 0 15px 0 15px;
     margin-left: auto;
     margin-right: auto;
-    height: 79px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav-container {
