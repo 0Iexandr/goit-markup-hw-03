@@ -6,11 +6,9 @@
     --white-color: #FFFFFF;
     --additional-bg-color: #2F303A;
     --team-section-bg-color: #F5F4FA;
-  }
+}
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto';
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -30,20 +28,21 @@ h1, h2, h3, ul, p {
     margin-right: auto;
 }
 
-.header-container {
-    border-bottom: 1px solid #ECECEC;
+.section {
+    padding: 94px 0 94px 0;
 }
 
-.header-section {
-    max-width: 100%;
-    width: 1200px;
-    padding: 0 15px 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+.header-container {
+    border-bottom: 1px solid #ECECEC;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.header-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-container {
@@ -102,6 +101,7 @@ h1, h2, h3, ul, p {
 .navigation-contact-list {
     display: flex;
     column-gap: 50px;
+    margin-left: auto;
 }
 
 .navigation-contact-list a {
@@ -114,7 +114,7 @@ h1, h2, h3, ul, p {
 
 .order-container {
     background: var(--additional-bg-color);
-    height: 600px;
+    padding: 200px 0 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,18 +149,12 @@ h1, h2, h3, ul, p {
 }
 
 .our-advantages-title {
-    padding-top: 94px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    display: none;
 }
 
 .our-advantages-list {
     display: flex;
     column-gap: 30px;
-    justify-content: center;
 }
 
 .our-advantages-list li {
@@ -181,8 +175,11 @@ h1, h2, h3, ul, p {
     color: var(--additional-text-color);
 }
 
+.what-are-we-doing-section {
+    padding-top: 0;
+}
+
 .what-are-we-doing-title {
-    margin-top: 94px;
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -193,9 +190,6 @@ h1, h2, h3, ul, p {
 .what-are-we-doing-list {
     display: flex;
     column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 94px;
 }
 
 .our-team-section {
@@ -203,7 +197,6 @@ h1, h2, h3, ul, p {
 }
 
 .our-team-title {
-    padding-top: 94px;
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -217,11 +210,13 @@ h1, h2, h3, ul, p {
     column-gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 94px;
+}
+
+.our-team-card-description {
+    padding: 30px 0 30px 0;
 }
 
 .our-team-list li {
-    height: 368px;
     width: 270px;
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -229,7 +224,7 @@ h1, h2, h3, ul, p {
 }
 
 .our-team-list h3 {
-    margin: 30px 0 10px 0;
+    margin: 0 0 10px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -245,12 +240,12 @@ h1, h2, h3, ul, p {
 
 .footer-container {
     background: var(--additional-bg-color);
-    height: 252px;
+    padding: 60px 0 60px 0;
 }
 
 .footer-logo {
     display: inline-block;
-    margin: 60px 0 20px 0;
+    margin: 0 0 20px 0;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
@@ -262,9 +257,12 @@ h1, h2, h3, ul, p {
     color: var(--white-color);
 }
 
+.address-list li {
+    margin-bottom: 9px;
+}
+
 .address-list a {
     display: inline-block;
-    margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -276,12 +274,7 @@ h1, h2, h3, ul, p {
 }
 
 .filter-title {
-    margin-top: 28px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    display: none;
 }
 
 .button-filter-list {
@@ -289,7 +282,7 @@ h1, h2, h3, ul, p {
     column-gap: 8px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
 }
 
 .button-filter-list button {
@@ -317,24 +310,21 @@ h1, h2, h3, ul, p {
     gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 94px;
 }
 
-.border-container {
-    box-sizing: border-box;
+.description-container {
     border: solid #EEEEEE;
     border-width: 0 1px 1px 1px;
-    height: 110px;
+    padding: 20px 24px 20px 24px;
 }
 
-.filter-container img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
 .filter-container h2 {
-    padding: 20px 24px 4px 24px ;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -342,8 +332,6 @@ h1, h2, h3, ul, p {
 }
 
 .filter-container p {
-    margin: 0 24px 20px 24px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     color: var(--additional-text-color);

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <title>WebStudio</title>
 </head>
 <body>
     <header class="header-container">
-        <div class="header-section">
+        <div class="container header-sections">
             <nav class="nav-container">
                 <a href="./index.html" class="header-logo">Web<span>Studio</span></a>
                 <ul class="navigation-list">
@@ -33,7 +34,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="section">
             <div class="container">
                 <h2 class="our-advantages-title">Наші переваги</h2>
                 <ul class="our-advantages-list">
@@ -57,7 +58,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="section what-are-we-doing-section">
             <div class="container">
                 <h2 class="what-are-we-doing-title">Чим ми займаємося</h2>
                 <ul class="what-are-we-doing-list">
@@ -68,29 +69,37 @@
             </div>
         </section>
 
-        <section class="our-team-section">
+        <section class="section our-team-section">
             <div class="container">
                 <h2 class="our-team-title">Наша команда</h2>
                 <ul class="our-team-list">
                     <li>
                         <img src="./images/team-member1.jpg" width="270" height="260" alt="Ігор Дем'яненко">
-                        <h3>Ігор Дем'яненко</h3>
-                        <p>Product Designer</p>
+                        <div class="our-team-card-description">
+                            <h3>Ігор Дем'яненко</h3>
+                            <p>Product Designer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team-member2.jpg" width="270" height="260" alt="Ольга Рєпіна">
-                        <h3>Ольга Рєпіна</h3>
-                        <p>Frontend Developer</p>
+                        <div class="our-team-card-description">
+                            <h3>Ольга Рєпіна</h3>
+                            <p>Frontend Developer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team-member3.jpg" width="270" height="260" alt="Микола Тарасов">
-                        <h3>Микола Тарасов</h3>
-                        <p>Marketing</p>
+                        <div class="our-team-card-description">
+                            <h3>Микола Тарасов</h3>
+                            <p>Marketing</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/team-member4.jpg" width="270" height="260" alt="Михайло Єрмаков">
-                        <h3>Михайло Єрмаков</h3>
-                        <p>UI Designer</p>
+                        <div class="our-team-card-description">
+                            <h3>Михайло Єрмаков</h3>
+                            <p>UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -103,7 +112,7 @@
                 <ul class="address-list">
                     <li><a href="#" id="footer-adress">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li style="margin-bottom: 0;"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
